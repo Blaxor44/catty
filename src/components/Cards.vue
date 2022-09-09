@@ -22,5 +22,8 @@ export default {
 
 </script>
  <style>
-
+.card{
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
  </style>

@@ -63,8 +63,9 @@ background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 11
 
 
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background : linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252))
+overflow: auto; background : linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252))
 
 
 }
+body { margin-top: 0 }
 </style>

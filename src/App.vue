@@ -1,7 +1,12 @@
 <template>
 <nav class="navbar navbar-dark bg-dark fixed-top" v-if="!$route.meta.hideNavbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+    <a class="navbar-brand" href="#">CATTY</a>
+    <nav>
+    <router-link to="/homepage">Home</router-link> |
+    <router-link to="/">Log out</router-link> |
+    <router-link to="/signup">Registracija</router-link>
+  </nav>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -41,6 +46,7 @@
   </div>
 </nav>
   <router-view/>
+  
 </template>
 
 
@@ -55,7 +61,6 @@
 
 nav {
   padding: 30px;
-
   a {
     font-weight: bold;
     color: #2c3e50;
@@ -65,4 +70,5 @@ nav {
     }
   }
 }
+
 </style>
