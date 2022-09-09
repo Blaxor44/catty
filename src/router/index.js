@@ -5,31 +5,31 @@ const routes = [
   {
     path: '/',
     name: 'homelogin',
-    component: HomeView
+    component: HomeView,
+    meta: {
+      hideNavbar: true,
+     }
   },
   {
     path: '/signup',
     name: 'signup',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Signup.vue')
+    component: () => import('../views/Signup.vue'),
+    meta: {
+      hideNavbar: true,
+     }
   },
   {
     path: '/resetpw',
     name: 'resetpw',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/ResetPw.vue')
+    component: () => import('../views/ResetPw.vue'),
+    meta: {
+      hideNavbar: true,
+     }
   },
   {
     path: '/homepage',
     name: 'homepage',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/HomePage.vue')
+    component: () => import('../views/HomePage.vue')
   }
 ]
 
@@ -39,3 +39,4 @@ const router = createRouter({
 })
 
 export default router
+
