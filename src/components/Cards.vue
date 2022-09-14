@@ -1,7 +1,7 @@
 <template>
  <div class="card">
-  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-    <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+  <div class="fill" data-mdb-ripple-color="light">
+    <img :src="slike" class="slikice"/>
     <a href="#!">
       <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
     </a>
@@ -17,6 +17,7 @@
 
 <script>
 export default {
+  props: ['slike', 'cijena', 'naziv'],
   name: 'Cards',
 };
 
@@ -26,4 +27,12 @@ export default {
     margin-bottom: 5px;
     margin-top: 20px;
 }
+
+
+.slikice {
+max-width: 100%;
+width: 490px;
+height: 320px;
+}
+
  </style>
