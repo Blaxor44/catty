@@ -22,33 +22,22 @@ You are at the right place. Explore and order a cat you like.</h1>
 
   let cards= []
   let cards2=[]
-  let naziv=[]
-  let naziv2=[]
-  let cijena=[]
-  let cijena2=[]
+ 
 
   cards=[
-    require("@/assets/ashera.jpg"),
-    require("@/assets/bengal.png"),
-    require('@/assets/peterbald.jpg'),
-    require('@/assets/scottish_fold.jpg'),
-    require('@/assets/american_curl.png'),
+    {url: require("@/assets/ashera.jpg"), naziv: 'Ashera', cijena: '$120,000', link: '/cd1' },
+    {url: require("@/assets/bengal.png"), naziv: 'Bengal', cijena: '$20,000', link: '/cd3'},
+    {url: require('@/assets/peterbald.jpg'), naziv: 'Peterbald', cijena: '$4,500', link: '/cd5'},
+    {url: require('@/assets/scottish_fold.jpg'), naziv: 'Scottish Fold', cijena: '$2,800', link: '/cd7'},
+    {url: require('@/assets/american_curl.png'), naziv: 'American Curl', cijena: '$1,000', link: '/cd9'},
   ],
 
   cards2=[
-    require('@/assets/savannah.jpg'),
-    require('@/assets/persian.png'),
-    require('@/assets/sphynx.png'),
-    require('@/assets/russian_blue.jpeg'),
-    require('@/assets/maine_coon.png'),
-  ]
-
-  naziv=[
-    
-
-
-
-
+    {url: require('@/assets/savannah.jpg'), naziv: 'Savannah', cijena: '$45,000', link: '/cd2'},
+    {url: require('@/assets/persian.png'), naziv: 'Persian', cijena: '$5,000', link: '/cd4'},
+    {url: require('@/assets/sphynx.png'), naziv: 'Sphynx', cijena: '$3,000', link: '/cd6'},
+    {url: require('@/assets/russian_blue.jpeg'), naziv: 'Russian Blue', cijena: '$2,800', link: '/cd8'},
+    {url: require('@/assets/maine_coon.png'), naziv: 'Maine Coon', cijena: '$800', link: '/cd10'},
   ]
 
     // @ is an alias to /src
@@ -58,7 +47,7 @@ import { assertThrowStatement } from '@babel/types'
      name: 'home',
      data: function() {
         return {
-          cards: cards, cards2,
+          cards: cards, cards2
         };
 
      },

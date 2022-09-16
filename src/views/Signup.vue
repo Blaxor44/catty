@@ -15,21 +15,21 @@
                <p class="text-white-50 mb-5">Please enter your new email and password!</p>
  
                <div class="form-outline form-white mb-4">
-                 <input type="email" id="typeEmailX" class="form-control form-control-lg" />
+                 <input type="email" v-model="username" id="typeEmailX" class="form-control form-control-lg" />
                  <label class="form-label" for="typeEmailX">Email</label>
                </div>
  
                <div class="form-outline form-white mb-4">
-                 <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                 <input type="password" v-model="password" id="typePasswordX" class="form-control form-control-lg" />
                  <label class="form-label" for="typePasswordX">New Password</label>
                </div>
 
                <div class="form-outline form-white mb-4">
-                 <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                 <input type="password" v-model="passwordRepeat" id="typePasswordX" class="form-control form-control-lg" />
                  <label class="form-label" for="typePasswordX">Repeat Password</label>
                </div>
  
-               <button onclick="location.href='/';" class="btn btn-outline-light btn-lg px-5" type="submit">Sign up</button>
+               <button onclick="location.href='#!';" @click="signup" class="btn btn-outline-light btn-lg px-5" type="submit">Sign up</button>
  
                <div class="d-flex justify-content-center text-center mt-4 pt-1">
                  <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
@@ -51,6 +51,8 @@
    </div>
  </section>
  </template>
+
+
 
    <style>
     .gradient-custom {

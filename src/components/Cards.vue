@@ -1,15 +1,15 @@
 <template>
  <div class="card">
   <div class="fill" data-mdb-ripple-color="light">
-    <img :src="slike" class="slikice"/>
+    <img :src="slike.url" class="slikice"/>
     <a href="#!">
       <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
     </a>
   </div>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#!" class="btn btn-primary">Preview</a>
+    <h5 class="card-title">{{ slike.naziv }}</h5>
+    <p class="card-text">{{ slike.cijena }}</p>
+    <a :href="slike.link" class="btn btn-primary">Preview</a>
     
   </div>
 </div>
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  props: ['slike', 'cijena', 'naziv'],
+  props: ['slike'],
   name: 'Cards',
 };
 

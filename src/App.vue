@@ -1,15 +1,11 @@
 <template>
 <nav class="navbar navbar-dark bg-dark fixed-top" v-if="!$route.meta.hideNavbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">CATTY</a>
+    <a class="navbar-brand" href="/homepage">CATTY</a>
     <nav>
     <router-link to="/homepage">Home</router-link> |
-    <router-link to="/">Log out</router-link> |
-    <router-link to="/signup">Registracija</router-link>
+    <router-link to="/">Log out</router-link>
   </nav>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
     <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
@@ -60,7 +56,7 @@
 }
 
 nav {
-  padding: 30px;
+  padding: 15px;
   a {
     font-weight: bold;
     color: #2c3e50;
