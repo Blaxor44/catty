@@ -19,7 +19,7 @@
             Their furry coat needs daily grooming and brushing. This breed comes in multiple variations and colors. 
             Its weight is comparable to a regular American Shorthair.
             <br> $5,000</p>
-        <a href="#!" class="btn btn-primary">Purchase</a>
+        <a href="/co" class="btn btn-primary">Purchase</a>
       </div>
     </div>
         </div>

@@ -18,7 +18,7 @@
             Despite this apparently cold personality, they look often content and happy 
             because their mouth shape resembles a small smile.
             <br> $2,800</p>
-        <a href="#!" class="btn btn-primary">Purchase</a>
+       <a href="/co" class="btn btn-primary">Purchase</a>
       </div>
     </div>
         </div>

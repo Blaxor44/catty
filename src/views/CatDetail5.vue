@@ -18,7 +18,7 @@
             However, its skin is very sensitive so children need to handle it carefully. 
             In addition, this breed is susceptible to sunburn and hence cannot spend a long time outdoors.
             <br> $4,500</p>
-        <a href="#!" class="btn btn-primary">Purchase</a>
+        <a href="/co" class="btn btn-primary">Purchase</a>
       </div>
     </div>
         </div>

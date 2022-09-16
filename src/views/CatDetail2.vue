@@ -18,7 +18,7 @@
             F1 cats are around 50% serval, while F5 cats are about 11% serval. 
             The price of this breed depends on their gender and classification and a prize F1 female can command up to $50,000. 
             <br> $45,000</p>
-        <a href="#!" class="btn btn-primary">Purchase</a>
+        <a href="/co" class="btn btn-primary">Purchase</a>
       </div>
     </div>
         </div>

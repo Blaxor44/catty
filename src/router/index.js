@@ -81,6 +81,16 @@ const routes = [
     name: 'cd10',
     component: () => import('../views/CatDetail10.vue')
   },
+  {
+    path: '/co',
+    name: 'co',
+    component: () => import('../views/Checkout.vue')
+  },
+  {
+    path: '/os',
+    name: 'os',
+    component: () => import('../views/OrderStatus.vue')
+  },
 ]
 
 const router = createRouter({

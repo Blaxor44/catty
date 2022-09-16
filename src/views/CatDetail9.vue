@@ -16,7 +16,7 @@
             This cat has a very affectionate personality and likes to socialize with humans and other cats. 
             It is not very vocal but an intelligent breed. The long-haired cats of this variety need plenty of grooming.
             <br> $1,000</p>
-        <a href="#!" class="btn btn-primary">Purchase</a>
+        <a href="/co" class="btn btn-primary">Purchase</a>
       </div>
     </div>
         </div>

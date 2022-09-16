@@ -19,7 +19,7 @@
             However, they need to be bathed often as they pile up body oils on their skin. 
             In addition, they are not comfortable outdoors.
             <br> $3,000</p>
-        <a href="#!" class="btn btn-primary">Purchase</a>
+        <a href="/co" class="btn btn-primary">Purchase</a>
       </div>
     </div>
         </div>

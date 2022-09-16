@@ -16,7 +16,7 @@
             but their personality on the contrary is happy and energetic, and they enjoy socializing and love attention. 
             However, health can be an issue as this breed can be impacted by degenerative joint tissues.
             <br> $2,800</p>
-        <a href="#!" class="btn btn-primary">Purchase</a>
+       <a href="/co" class="btn btn-primary">Purchase</a>
       </div>
     </div>
         </div>

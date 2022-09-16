@@ -18,7 +18,7 @@
       Despite the controversy about its genetics, the Ashera is the most prized pet cat in the world and you can take one home 
       if you can cough up the astronomical price. 
       <br> 120, 000$</p>
-    <a href="#!" class="btn btn-primary">Purchase</a>
+    <a href="/co" class="btn btn-primary">Purchase</a>
   </div>
 </div>
     </div>

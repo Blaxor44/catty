@@ -18,7 +18,7 @@
             Personality-wise, Bengals are affectionate, child- and dog-friendly, and very social. 
             In addition, they are energetic and extremely playful. 
             <br> $20,000</p>
-        <a href="#!" class="btn btn-primary">Purchase</a>
+        <a href="/co" class="btn btn-primary">Purchase</a>
       </div>
     </div>
         </div>

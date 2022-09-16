@@ -18,7 +18,7 @@
             The breed is generally healthy and doesn't need combing or brushing except in spring when it sheds its winter coat. 
             It gets along great with children and other pets in the household.
             <br> $800</p>
-        <a href="#!" class="btn btn-primary">Purchase</a>
+          <a href="/co" class="btn btn-primary">Purchase</a>
       </div>
     </div>
         </div>
