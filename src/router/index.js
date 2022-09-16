@@ -34,52 +34,52 @@ const routes = [
   {
     path: '/cd1',
     name: 'cd1',
-    component: () => import('../views/CatDetail1.vue')
+    component: () => import('../views/Ashera.vue')
   },
   {
     path: '/cd2',
     name: 'cd2',
-    component: () => import('../views/CatDetail2.vue')
+    component: () => import('../views/Savannah.vue')
   },
   {
     path: '/cd3',
     name: 'cd3',
-    component: () => import('../views/CatDetail3.vue')
+    component: () => import('../views/Bengal.vue')
   },
   {
     path: '/cd4',
     name: 'cd4',
-    component: () => import('../views/CatDetail4.vue')
+    component: () => import('../views/Persian.vue')
   },
   {
     path: '/cd5',
     name: 'cd5',
-    component: () => import('../views/CatDetail5.vue')
+    component: () => import('../views/Peterbald.vue')
   },
   {
     path: '/cd6',
     name: 'cd6',
-    component: () => import('../views/CatDetail6.vue')
+    component: () => import('../views/Sphynx.vue')
   },
   {
     path: '/cd7',
     name: 'cd7',
-    component: () => import('../views/CatDetail7.vue')
+    component: () => import('../views/ScottishFold.vue')
   },
   {
     path: '/cd8',
     name: 'cd8',
-    component: () => import('../views/CatDetail8.vue')
+    component: () => import('../views/RussianBlue.vue')
   },
   {
     path: '/cd9',
     name: 'cd9',
-    component: () => import('../views/CatDetail9.vue')
+    component: () => import('../views/AmericanCurl.vue')
   },
   {
     path: '/cd10',
     name: 'cd10',
-    component: () => import('../views/CatDetail10.vue')
+    component: () => import('../views/MaineCoon.vue')
   },
   {
     path: '/co',
