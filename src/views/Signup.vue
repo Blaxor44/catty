@@ -29,7 +29,7 @@
                  <label class="form-label" for="typePasswordX">Repeat Password</label>
                </div>
  
-               <button onclick="location.href='#!';" @click="signup" class="btn btn-outline-light btn-lg px-5" type="submit">Sign up</button>
+               <button onclick="location.href='#!';" @click="signup" class="btn btn-outline-light btn-lg px-5" type="button">Sign up</button>
  
                <div class="d-flex justify-content-center text-center mt-4 pt-1">
                  <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
@@ -52,6 +52,34 @@
  </section>
  </template>
 
+<script>
+  import { firebase } from '@/firebase.js';
+  
+  export default{
+    name: 'Signup',
+    data() {
+      return {
+        username: '',
+        password: '',
+        passwordRepeat: '',
+      };
+    },
+    methods:{
+      signup(){
+          firebase
+          .auth()
+          .createUserWithEmailAndPassword(this.username, this.password)
+          .then(function(){
+              console.log('Uspjesna registracija');
+          })
+          .catch(function(error){
+              console.error("Doslo je do greske, error")
+          });
+        },
+    },
+  };
+  
+  </script>
 
 
    <style>
