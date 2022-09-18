@@ -116,6 +116,14 @@ const routes = [
       },
   },
   {
+    path: '/ba',
+    name: 'ba',
+    component: () => import('../views/BillingAdress.vue'),
+    meta: { 
+      needsAuth: true,
+      },
+  },
+  {
     path: '/co',
     name: 'co',
     component: () => import('../views/Checkout.vue'),

@@ -4,58 +4,53 @@
       <img src="@/assets/catty.png" class="product" alt="Shoes" />
     </div>
     <div class="rightside">
-      <form action="">
-        <h1>CheckOut</h1>
-        <h2>Payment Information</h2>
-        <p>Cardholder Name</p>
-        <input type="text" class="inputbox" name="name" required />
-        <p>Card Number</p>
+      <form method="post" action="" id="adress">
+        <h1>Billing Adress</h1>
+        <h2>Adress information</h2>
+        <p>Full Name</p>
+        <input type="text" class="inputbox" name="name" id="name" required />
+        <p>Phone number</p>
         <input
-          type="number"
+          type="text"
           class="inputbox"
-          name="card_number"
-          id="card_number"
+          name="number"
+          id="number"
           required
         />
-
-        <p>Card Type</p>
-        <select class="inputbox" name="card_type" id="card_type" required>
-          <option value="">--Select a Card Type--</option>
-          <option value="Visa">Visa</option>
-          <option value="MasterCard">MasterCard</option>
-        </select>
-        <div class="expcvv">
-          <p class="expcvv_text">Expiry</p>
-          <input
-            type="date"
-            class="inputbox"
-            name="exp_date"
-            id="exp_date"
-            required
-          />
-
-          <p class="expcvv_text2">CVV</p>
-          <input
-            type="password"
-            class="inputbox"
-            name="cvv"
-            id="cvv"
-            required
-          />
-        </div>
+        <p>Country</p>
+        <input
+          type="text"
+          class="inputbox"
+          name="country"
+          id="country"
+          required
+        />
+        <p>City</p>
+        <input type="text" class="inputbox" name="city" id="city" required />
+        <p>Adress</p>
+        <input
+          type="text"
+          class="inputbox"
+          name="adress"
+          id="adress"
+          required
+        />
+        <p>Zip/Postal Code</p>
+        <input type="text" class="inputbox" name="code" id="code" required />
         <p></p>
         <button
-          onclick="window.location.href='/os'"
+          onclick="window.location.href='/co'"
           type="button"
           class="button"
         >
-          CheckOut
+          Next
         </button>
       </form>
     </div>
   </div>
 </template>
 
+<script></script>
 <style>
 .card {
   width: 60rem;

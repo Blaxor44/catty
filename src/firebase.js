@@ -13,5 +13,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+let db = firebase.firestore();
 
-export { firebase };
+export { firebase, db };
