@@ -14,59 +14,6 @@
     </div>
     <div class="col-1"></div>
   </div>
-
-  <form @submit.prevent="postNewImage" class="form-inline mb-5">
-    <div class="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-          <div class="card bg-dark text-white" style="border-radius: 1rem">
-            <div class="card-body p-5 text-center">
-              <div class="mb-md-5 mt-md-4 pb-5">
-                <img src="@\assets\catty.png" width="200" height="200" />
-                <h2 class="fw-bold mb-2 text">New Cat</h2>
-                <p class="text-white-50 mb-5">Add new cat for sell</p>
-
-                <div class="form-group">
-                  <label for="imageUrl">Cat image URL</label>
-                  <input
-                    v-model="newImageUrl"
-                    type="text"
-                    class="form-control ml-2"
-                    placeholder="Enter image URL"
-                    id="imageUrl"
-                  />
-                  <div class="form-group">
-                    <label for="imageName">Name</label>
-                    <input
-                      v-model="newImageName"
-                      type="text"
-                      class="form-control ml-2"
-                      placeholder="Enter name of the cat"
-                      id="imageName"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="imagePrice">Price</label>
-                    <input
-                      v-model="newImagePrice"
-                      type="text"
-                      class="form-control ml-2"
-                      placeholder="Enter price"
-                      id="imagePrice"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-outline-light btn-lg px-5">
-              Post cat
-            </button>
-            <div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </form>
 </template>
 
 <script>
@@ -139,8 +86,6 @@ let cards2 = [];
   ]);
 
 import Cards from "@/components/Cards.vue";
-import store from "@/store";
-import { db } from "@/firebase";
 
 export default {
   name: "home",
@@ -148,59 +93,10 @@ export default {
     return {
       cards: cards,
       cards2,
-      newImageUrl: "",
-      newImageName: "",
-      newImagePrice: "",
     };
   },
   components: {
     Cards,
-  },
-  mounted() {
-    this.getPosts();
-  },
-  methods: {
-    getPosts() {
-      //... API/Firebase -> sve kartice -> cards
-      console.log("Loading posts");
-      db.collection("posts")
-        .get()
-        .then((results) => {
-          results.forEach((doc) => {
-            let id = doc.id;
-            let data = doc.data();
-            let Cards = {
-              id: doc.id,
-              url: data.url,
-              time: data.posted_at,
-              name: data.name,
-              price: data.price,
-            };
-            this.cards.push(Cards);
-          });
-        });
-    },
-
-    postNewImage() {
-      db.collection("posts")
-        .add({
-          url: this.newImageUrl,
-          name: this.newImageName,
-          price: this.newImagePrice,
-          email: store.currentUser,
-          posted_at: Date.now(),
-        })
-        .then((doc) => {
-          console.log("Spremljeno", doc);
-          this.newImageUrl = "";
-          this.newImageName = "";
-          this.newImagePrice = "";
-          this.getPosts();
-        })
-        .catch((e) => {
-          console.error(e);
-        });
-    },
   },
 };
 </script>
