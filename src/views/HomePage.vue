@@ -14,6 +14,7 @@
     </div>
     <div class="col-1"></div>
   </div>
+
   <form @submit.prevent="postNewImage" class="form-inline mb-5">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
@@ -35,7 +36,7 @@
                     id="imageUrl"
                   />
                   <div class="form-group">
-                    <label for="imageDescription">Name</label>
+                    <label for="imageName">Name</label>
                     <input
                       v-model="newImageName"
                       type="text"
@@ -45,7 +46,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="imageDescription">Price</label>
+                    <label for="imagePrice">Price</label>
                     <input
                       v-model="newImagePrice"
                       type="text"
@@ -138,7 +139,6 @@ let cards2 = [];
   ]);
 
 import Cards from "@/components/Cards.vue";
-import { assertThrowStatement } from "@babel/types";
 import store from "@/store";
 import { db } from "@/firebase";
 
@@ -156,7 +156,31 @@ export default {
   components: {
     Cards,
   },
+  mounted() {
+    this.getPosts();
+  },
   methods: {
+    getPosts() {
+      //... API/Firebase -> sve kartice -> cards
+      console.log("Loading posts");
+      db.collection("posts")
+        .get()
+        .then((results) => {
+          results.forEach((doc) => {
+            let id = doc.id;
+            let data = doc.data();
+            let Cards = {
+              id: doc.id,
+              url: data.url,
+              time: data.posted_at,
+              name: data.name,
+              price: data.price,
+            };
+            this.cards.push(Cards);
+          });
+        });
+    },
+
     postNewImage() {
       db.collection("posts")
         .add({
@@ -171,6 +195,7 @@ export default {
           this.newImageUrl = "";
           this.newImageName = "";
           this.newImagePrice = "";
+          this.getPosts();
         })
         .catch((e) => {
           console.error(e);
