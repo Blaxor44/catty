@@ -1,10 +1,10 @@
 # Catty
-
+Aplikacija Catty namijenjena je svim ljubiteljima mačaka koji su spremni za mačku platiti i preko $1000. U svom bogatstvu od stotina vrsta mačaka, neke se izdvajaju  pa baš stoga garantiramo ljepotu i originalnost zbog njihove unikatnosti i rijetkosti. Funkcionalnost je odabir i kupovina odabrane rijetke vrste mačke.
 ## Prototip aplikacije
 Figma: [Catty](https://www.figma.com/file/4NGxKwxLsMmlDiTyMq8jYe/Catty-Figma?node-id=33%3A444)
 
 ## Javni link na aplikaciju
-Web: [Catty]()
+Web: [Catty](https://catty-five.vercel.app/)
 
 ## Organizacija
 * [Sveučilište Jurja Dobrile u Puli](https://www.unipu.hr/)
