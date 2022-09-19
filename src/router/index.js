@@ -1,8 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/Login.vue'
-
+import ForgotPassword from "@/components/ForgotPassword";
 
 const routes = [
+  {
+    path: "/forgot-password",
+    name: "forgotPassword",
+    component: ForgotPassword,
+    beforeEnter(to, from, next) {
+      const user = firebase.auth().currentUser;
+      if (user) {
+        next({ name: "dashboard" });
+      } else {
+        next();
+      }
+    },
+  },
   {
     path: '/',
     name: 'homelogin',
@@ -22,7 +35,7 @@ const routes = [
   {
     path: '/resetpw',
     name: 'resetpw',
-    component: () => import('../views/ResetPw.vue'),
+    component: () => import('../views/ForgotPassword.vue'),
     meta: {
       hideNavbar: true,
      }
@@ -111,14 +124,6 @@ const routes = [
     path: '/cd10',
     name: 'cd10',
     component: () => import('../views/MaineCoon.vue'),
-    meta: { 
-      needsAuth: true,
-      },
-  },
-  {
-    path: '/ba',
-    name: 'ba',
-    component: () => import('../views/BillingAdress.vue'),
     meta: { 
       needsAuth: true,
       },

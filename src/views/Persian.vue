@@ -28,7 +28,7 @@
             <br />
             $5,000
           </p>
-          <a href="/ba" class="btn btn-primary">Purchase</a>
+          <a href="/co" class="btn btn-primary">Purchase</a>
         </div>
       </div>
     </div>
